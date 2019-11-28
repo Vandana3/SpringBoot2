@@ -1,0 +1,108 @@
+
+
+
+{
+
+"name":"Vandana",
+"dateOfBirth":"1997-11-12",
+"phoneNo":"9480491466",
+"email":"vand@gmail.com",
+"address":"Bangalore",
+"aadhar":"236578904567",
+"password":"v123"
+}
+
+
+{
+
+"name":"Lisa",
+"dateOfBirth":"1997-10-12",
+"phoneNo":"9480491466",
+"email":"lisa@gmail.com",
+"address":"Bangalore",
+"aadhar":"234565673457",
+"password":"l123"
+}
+
+
+{
+
+"fromAccountNumber":"SBI123450",
+"toAccountNumber":"SBI123451",
+"amount":100,
+"description":"Debit"
+}
+{
+"fromAccountNumber":"SBI123450",
+"toAccountNumber":"SBI123450",
+"name":"abc"
+}
+
+
+
+@bean
+@jsonignore
+
+
+{
+    
+    "name": "Vandana",
+    "dateOfBirth": "1997-11-12",
+    "phoneNumber": "9480675678",
+    "dateOfJoining": "2019-09-12",
+    "email": "vand@gmail.com",
+    "address": "Bangalore"
+}
+
+/*
+			 * emi=(p*r*(Math.pow(1+r, n)))/(Math.pow(1+r, n)-1); System.out.println(emi);
+			 */
+	8081
+	/Employee
+	List<Employee> employee=restTemplate.getForObject("http://localhost:8081/employee/salary?salary=10000",List.class);
+	http://Employee/employee/salary?salary=10000----->Will not work in browser
+
+	8080
+	/Loan
+	List<Loan> loan=restTemplate.getForObject("http://localhost:8080/loan?salary=30000",List.class);
+	http://app/loan?salary=30000----->Will not work in browser
+
+	8082
+	http://localhost:8082/Employee---->Will work in both postman and browser
+	http://localhost:8082/Loan---->Will work in both postman and browser
+
+
+
+
+insert into flight(flight_id,arrival_time,date,departure_time,destination,name,source,type) values(2000,"10:20","2019-10-09","18:30","mumbai","airIndia","bangalore","airbus");
+insert into flight(flight_id,arrival_time,date,departure_time,destination,name,source,type) values(2001,"12:20","2019-10-09","19:40","mumbai","airIndia","bangalore","airbus");
+
+insert into category values(2000,5000,100,3000,100);
+insert into category values(2001,5000,100,3000,100);
+
+insert into airport values(3000,"bangalore","BIA");
+
+	Integer flightId;
+	int numberOfTickets;
+	String category;
+	int userId;
+	String source;
+	String destination;
+	Date date;
+  	HashMap<String,Integer> passenger;----
+
+	*private Integer ticketId;
+	*private String source;
+	*private String airportName;
+	*private Integer flightId;	
+	*private String destination;
+	*private Date date;
+	*private Time arrivalTime;
+	*private Time departureTime;	
+	*private int numberOfTickets;
+	*private String category;
+	*private int userId;
+	*private double cost;
+
+
+			 
